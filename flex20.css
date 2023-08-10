@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: "roboto";
+}
+
+body {
+    margin: 0px;
+}
+
+.bgcontainer {
+    background-image: linear-gradient(to bottom, #b96fa1, #5a3f8c);
+    padding: 20px;
+    height: 100vh;
+    display: Flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    margin: 20px;
+    width: 150px;
+}
+
+.heading {
+    font-size: 28px;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.humidity {
+    font-size: 12px;
+}
+
+.date {
+    font-size: 18px;
+}
+
+.temp1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.temp2 {
+    font-size: 15px;
+}
+
+.result {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.transbox {
+    display: Flex;
+    flex-direction: column;
+}
+
+.box {
+    display: Flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.box1 {
+    background-color: #ffffff20;
+    border-color: #e9e9e930;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.box2 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.box3 {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.weatherimage {
+    width: 50px;
+}
+
+@media screen and (min-width:900px) {
+
+    .box {
+        flex-direction: column;
+        background-color: transparent;
+        border-color: transparent;
+        margin: 10px;
+    }
+
+    .lowerpart {
+        flex-direction: row;
+    }
+
+    .transbox {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cent {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .temp1 {
+        margin-right: 5px;
+    }
+
+}
